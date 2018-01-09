@@ -1,11 +1,11 @@
 package com.example.rbsbjava;
 
-public class Greeting {
+public class Resume {
 
     private final long id;
     private final String content;
 
-    public Greeting(long id, String content) {
+    public Resume(long id, String content) {
         this.id = id;
         this.content = content;
     }
