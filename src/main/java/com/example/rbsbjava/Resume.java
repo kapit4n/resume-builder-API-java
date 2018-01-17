@@ -11,27 +11,33 @@ public class Resume {
     @Id
     @GeneratedValue(strategy=GenerationType.AUTO)
     private long id;
-    private String content;
+    private String title;
+    private String summary;
 
     public Resume(){}
 
 
-    public Resume(String content) {
-        this.content = content;
+    public Resume(String title, String summary) {
+        this.title = title;
+        this.summary = summary;
     }
 
     public long getId() {
         return id;
     }
 
-    public String getContent() {
-        return content;
+    public String getTitle() {
+        return title;
+    }
+
+    public String getSummary() {
+        return title;
     }
 
     @Override
     public String toString() {
         return String.format(
-                "Resume[id=%d, content='%s'']",
-                id, content);
+                "Resume[id=%d, title='%s', summary='%s']",
+                id, title, summary);
     }
 }

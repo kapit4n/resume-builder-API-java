@@ -6,5 +6,5 @@ import org.springframework.data.repository.CrudRepository;
 
 public interface ResumeRepository extends CrudRepository<Resume, Long> {
 
-    List<Resume> findByContent(String content);
+    List<Resume> findByTitle(String title);
 }

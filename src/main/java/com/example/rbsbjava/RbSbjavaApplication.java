@@ -17,11 +17,11 @@ public class RbSbjavaApplication {
 	public CommandLineRunner demo(ResumeRepository repository) {
 		return (args) -> {
 			// save a couple of customers
-			repository.save(new Resume("Bauer"));
-			repository.save(new Resume("O'Brian"));
-			repository.save(new Resume("Bauer"));
-			repository.save(new Resume("Palmer"));
-			repository.save(new Resume("Dessler"));
+			repository.save(new Resume("Full Stack Java Developer", "Full Stack Java Developer"));
+			repository.save(new Resume("Full Stack JavaScript Developer", "Full Stack JavaScript Developer"));
+			repository.save(new Resume("Full Stack Scala Developer", "Full Stack Scala Developer"));
+			repository.save(new Resume("Full Stack Python Developer", "Full Stack Python Developer"));
+			repository.save(new Resume("Full Stack GO Developer", "Full Stack GO Developer"));
 
 			// fetch all customers
 			System.out.println("Resumes found with findAll():");
@@ -39,10 +39,10 @@ public class RbSbjavaApplication {
 			System.out.println("");
 
 			// fetch customers by last name
-			System.out.println("Resume found with findByContent('Bauer'):");
+			System.out.println("Resume found with findByContent('Full Stack Java Developer'):");
 			System.out.println("--------------------------------------------");
-			for (Resume bauer : repository.findByContent("Bauer")) {
-				System.out.println(bauer.toString());
+			for (Resume javaDev : repository.findByTitle("Full Stack Java Developer")) {
+				System.out.println(javaDev.toString());
 			}
 			System.out.println("");
 		};

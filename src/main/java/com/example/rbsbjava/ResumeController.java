@@ -8,11 +8,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class ResumeController {
 
-    private static final String template = "Hello, %s!";
-    private final AtomicLong counter = new AtomicLong();
-
     @RequestMapping("/resumes")
-    public Resume resume(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Resume(String.format(template, name));
+    public Resume resume() {
+        return new Resume("Software Title", "Software Summary");
     }
 }
