@@ -13,7 +13,6 @@ public class ResumeController {
 
     @RequestMapping("/resumes")
     public Resume resume(@RequestParam(value="name", defaultValue="World") String name) {
-        return new Resume(counter.incrementAndGet(),
-                            String.format(template, name));
+        return new Resume(String.format(template, name));
     }
 }

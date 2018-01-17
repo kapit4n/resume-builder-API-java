@@ -1,4 +1,4 @@
-package com.example.rbsbjava;
+/*package com.example.rbsbjava;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -13,4 +13,7 @@ public class RbSbjavaApplicationTests {
 	public void contextLoads() {
 	}
 
+
+
 }
+*/
