@@ -13,7 +13,7 @@ public class RbSbjavaApplication {
 		SpringApplication.run(RbSbjavaApplication.class, args);
 	}
 
-	@Bean
+	/*@Bean
 	public CommandLineRunner demo(ResumeRepository repository) {
 		return (args) -> {
 			// save a couple of customers
@@ -46,6 +46,6 @@ public class RbSbjavaApplication {
 			}
 			System.out.println("");
 		};
-	}
+	}*/
 
 }

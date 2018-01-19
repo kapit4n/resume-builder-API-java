@@ -2,9 +2,12 @@ package com.example.rbsbjava;
 
 import java.util.List;
 
-import org.springframework.data.repository.CrudRepository;
+import org.springframework.data.jpa.repository.JpaRepository;
+import javax.persistence.*;
+import org.springframework.stereotype.Repository;
 
-public interface ResumeRepository extends CrudRepository<Resume, Long> {
 
-    List<Resume> findByTitle(String title);
+@Repository
+public interface ResumeRepository extends JpaRepository<Resume, Long> {
+
 }
