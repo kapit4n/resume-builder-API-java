@@ -2,6 +2,7 @@
 
 
 ### What is this repository for? ###
+Spring boot api application to display.
 
 ### How do I get set up? ###
 * ./gradlew build 
